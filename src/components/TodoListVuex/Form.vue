@@ -17,16 +17,18 @@
 
 <script setup>
     import {ref} from 'vue';
-    import {useStore} from '../../vuex/index.js'
+    import {useStore} from '@/vuex/index.js'
     // import {useStore} from 'vuex'
 
     const store = useStore();
     const inputRef = ref('');
 
     const addTodo = () => {
-        store.dispatch('addTodo', inputRef.value);
+        store.dispatch('addTodo', inputRef.value)
         inputRef.value = '';
     }
+
+
 </script>
 
 <style scoped lang="scss">

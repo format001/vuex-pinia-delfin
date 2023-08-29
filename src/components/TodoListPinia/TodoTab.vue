@@ -6,13 +6,13 @@
       :class="{ active: todoListStore.filter === 'all' }"
       @click="setFilter('all')"
     >All</a>
-    <a 
+    <a
       href="javascript:;"
       class="nav-item"
       :class="{ active: todoListStore.filter === 'finished' }"
       @click="setFilter('finished')"
     >Finished</a>
-    <a 
+    <a
       href="javascript:;"
       class="nav-item"
       :class="{ active: todoListStore.filter === 'unfinished' }"

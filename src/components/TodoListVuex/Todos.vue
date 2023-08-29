@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-    import {useStore} from '../../vuex/index.js'
+    import {useStore} from '@/vuex/index.js'
    // import {useStore} from 'vuex'
 
     const store = useStore();

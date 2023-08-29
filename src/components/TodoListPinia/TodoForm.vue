@@ -20,6 +20,7 @@
   import { useTodoListStore } from '@/piniaStore';
 
   const todoListStore = useTodoListStore();
+
   const inputRef = ref('');
 
   const addTodo = () => {

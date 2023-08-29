@@ -6,9 +6,15 @@ import center from '@/center/index.js'
 import { createPinia } from '@/pinia';
 
 
-createApp(App)
+
+const app = createApp(App)
     .use(store)
     .use(center)
     .use(createPinia())
-    .mount('#app')
+
+const vm = app.mount('#app');
+
+
+
+
 
